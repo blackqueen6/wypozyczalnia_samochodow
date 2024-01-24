@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Wypożyczalnia samochodów - Strona Główna </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"><img src="images/logo.svg" /></label>
+        <ul>
+            <li><a class="active" href="index.html">Strona Główna</a></li>
+            <li><a href="samochody.html">Samochody</a></li>
+            <li><a href="O_nas.html">O nas</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    <script src="script.js"></script>
+    <!-- Carousel section -->
+    <section class="carousel">
+        <div class="carousel-container">
+            <div class="slide">
+                <img src="images/auto_home.png" alt="Car 1">
+                <div class="text">Wypożyczalnia samochodów sportowych i luksusowych</div>
+            </div>
+            <div class="slide">
+                <img src="images/slajd1.webp" alt="Car 2">
+                <div class="text2">Auta luksusowe oferują prestiż, wygodę i niekłamaną przyjemność
+                    podróżowania.</div>
+            </div>
+            <div class="slide">
+                <img src="images/slajd2.jpg" alt="Car 3">
+                <div class="text2">Skorzystaj już dziś!</div>
+            </div>
+        </div>
+        <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+        <a class="next" onclick="moveSlide(1)">&#10095;</a>
+        <a href="samochody.html" class="btn-view-cars">Zobacz wszystkie samochody</a>
+        <div class="carousel-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+    <section class="why-choose-us">
+        <h2>Dlaczego warto nas wybrać?</h2>
+    </section>
+    <section class="features">
+        <div class="feature-item">
+            <img src="images/car.png" alt="Icon 1" />
+            <h3>Bogata oferta</h3>
+            <p>Bardzo duży wybór luksusowych samochodów na wynajem.</p>
+        </div>
+        <div class="feature-item">
+            <img src="images/chat.png" alt="Icon 2" />
+            <h3>Wielu zadowolonych Klientów</h3>
+            <p>Każdego dnia poszerza nam się grono zadowolonych Klientów.</p>
+        </div>
+        <div class="feature-item">
+            <img src="images/docs.png" alt="Icon 3" />
+            <h3>Minimum formalności</h3>
+            <p>Staramy się pomagać naszym Klientom, upraszczając formalności.</p>
+        </div>
+    </section>
+    <section>
+        <div class="carousel2-wrapper">
+            <div class="carousel2">
+                <div class="carousel-item">
+                    <img src="images/car-3.jpg" alt="Ferrari F8 tributo">
+                    <a class="rent-button" href="samochody.html">Wynajmij</a>
+                    <p class="car-title">Ferrari F8 tributo</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/car-2.jpg" alt="BMW M5 Competition">
+                    <a class="rent-button" href="samochody.html">Wynajmij</a>
+                    <p class="car-title">BMW M5 Competition</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/car-4.jpg" alt="Lamborghini Urus">
+                    <a class="rent-button" href="samochody.html">Wynajmij</a>
+                    <p class="car-title">Lamborghini Urus</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/car-5.jpg" alt="Mercedes AMG GT63s">
+                    <a class="rent-button" href="samochody.html">Wynajmij</a>
+                    <p class="car-title">Mercedes AMG GT63s</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/car-6.jpg" alt="Tesla S Plaid">
+                    <a class="rent-button" href="samochody.html">Wynajmij</a>
+                    <p class="car-title">Tesla S Plaid</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/car-1.jpg" alt="Audi R8">
+                    <a class="rent-button" href="samochody.html">Wynajmij</a>
+                    <p class="car-title">Audi R8</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-column">
+            <h3>DANE ADRESOWE</h3>
+            <p>FastCars<br>
+                Bandrowskiego 8<br>
+                33-100 Tarnów<br>
+                woj. małopolskie<br>
+                NIP: 6601820949</p>
+        </div>
+        <div class="footer-column">
+            <h3>DANE KONTAKTOWE</h3>
+            <p>Tel: +48 602 678 650<br>
+                Email: fastcars@gmail.com</p>
+        </div>
+        <div class="footer-column">
+            <h3>WAŻNE LINKI</h3>
+            <ul>
+                <li><a href="#privacyPolicyModal">Polityka prywatności</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            Copyright &copy; <span id="year"></span> Fast Cars
+        </div>
+    </footer>
+    <div id="privacyPolicyModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Polityka Prywatności</h2>
+            <div>
+                <p><strong>1. Wstęp</strong><br>
+                    Niniejsza Polityka Prywatności obowiązuje w firmie Fast Cars, z siedzibą przy ul. Bandrowskiego 8,
+                    33-100 Tarnów, woj. małopolskie, NIP: 6601820949. Dokument ten ma na celu informowanie naszych
+                    klientów i użytkowników naszej strony internetowej o zasadach przetwarzania ich danych osobowych.
+                </p>
+
+                <p><strong>2. Zbieranie Danych Osobowych</strong><br>
+                    W trakcie korzystania ze strony internetowej Fast Cars oraz podczas korzystania z naszych usług,
+                    możemy zbierać różne dane osobowe, w tym, ale nie wyłącznie: imię i nazwisko, adres e-mail, numer
+                    telefonu, dane dotyczące płatności, a także dane pojazdów.</p>
+
+                <p><strong>3. Cel Przetwarzania Danych</strong><br>
+                    Zebrane dane osobowe są wykorzystywane do: Realizacji umów wynajmu samochodów, Komunikacji z
+                    klientami w sprawach związanych z usługami, Wysyłania informacji marketingowych (jeśli wyrazili
+                    Państwo na to zgodę), Poprawy jakości naszych usług i strony internetowej.</p>
+
+                <p><strong>4. Ochrona Danych Osobowych</strong><br>
+                    Fast Cars stosuje odpowiednie środki techniczne i organizacyjne, aby zapewnić ochronę przetwarzanych
+                    danych osobowych przed nieuprawnionym dostępem, zmianą, uszkodzeniem lub zniszczeniem.</p>
+
+                <p><strong>5. Udostępnianie Danych</strong><br>
+                    Fast Cars nie sprzedaje ani nie udostępnia danych osobowych stronom trzecim, z wyjątkiem przypadków
+                    wymaganych przez prawo, np. na żądanie organów ścigania.</p>
+
+                <p><strong>6. Prawa Użytkowników</strong><br>
+                    Użytkownicy mają prawo do: Dostępu do swoich danych, Sprostowania danych, Usunięcia danych (prawo do
+                    bycia zapomnianym), Ograniczenia przetwarzania danych, Przenoszenia danych, Sprzeciwu wobec
+                    przetwarzania danych.</p>
+
+                <p><strong>7. Zmiany w Polityce Prywatności</strong><br>
+                    Niniejsza polityka prywatności może być aktualizowana w celu odzwierciedlenia zmian w naszych
+                    praktykach dotyczących prywatności lub zmian w prawie. Zachęcamy do regularnego przeglądania tej
+                    strony w celu uzyskania informacji o naszych praktykach i zasadach prywatności.</p>
+
+                <p><strong>8. Kontakt</strong><br>
+                    W przypadku pytań lub wątpliwości dotyczących naszej polityki prywatności, prosimy o kontakt pod
+                    adresem e-mail: fastcars@gmail.com lub pod numerem telefonu: +48 602 678 650.</p>
+            </div>
+
+        </div>
+</body>
+
+</html>

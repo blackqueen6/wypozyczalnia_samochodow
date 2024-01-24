@@ -1,0 +1,428 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat;
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;
+}
+
+nav {
+    background: #ffffff;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 2px 2px 5px
+}
+
+label.logo {
+    color: white;
+    line-height: 100px;
+    padding: 0 100px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 40px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    background: #C69C6D;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #C69C6D;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #C69C6D;
+
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+
+}
+
+/* Odtąd  dotyczy karuzeli ze zdj*/
+.carousel {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    height: 600px;
+}
+
+.slide {
+    flex: 0 0 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.text {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px;
+}
+
+.text2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px;
+}
+
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.btn-view-cars {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 20px 30px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.carousel-dots {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #d0d0d0;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #636363;
+}
+
+.why-choose-us {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.why-choose-us h2 {
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+}
+
+.feature-item {
+    flex-basis: 30%;
+}
+
+.feature-item img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.feature-item h3 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.feature-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+
+/* Karuzela 2 */
+.carousel2 {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.carousel2-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.carousel-item {
+    flex: 0 0 33.333%;
+    position: relative;
+    width: 300px;
+}
+
+.carousel-item img {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item:hover img {
+    transform: scale(1.1);
+}
+
+
+.rent-button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #C69C6D;
+    color: white;
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+
+.carousel-item .rent-button {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.carousel-item:hover .rent-button {
+    opacity: 1;
+    visibility: visible;
+}
+
+.car-title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+
+section {
+    position: relative;
+}
+
+
+@media (max-width: 768px) {
+
+    .rent-button,
+    .car-title {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.site-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-column {
+    padding: 0 50px;
+
+
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+.footer-column p,
+.footer-column li {
+    line-height: 1.6;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column li a:hover {
+    text-decoration: underline;
+}
+
+.footer-column {
+    margin-bottom: 5px;
+
+}
+
+.site-footer .copyright {
+    color: #808080;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 10px;
+}

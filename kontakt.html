@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Wypożyczalnia samochodów - Strona Główna </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_kontakt.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"><img src="images/logo.svg" /></label>
+        <ul>
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="samochody.html">Samochody</a></li>
+            <li><a href="O_nas.html">O nas</a></li>
+            <li><a class="active" href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    <script src="script.js"></script>
+    <div class="video-background">
+        <video autoplay loop muted playsinline>
+            <source src="films/tło.mp4" type="video/mp4">
+        </video>
+    </div>
+    <section class="contact-form">
+        <div class="contact-title">Skontaktuj się z nami</div>
+        <form id="contact-form">
+            <div class="row">
+                <div class="input-wrapper">
+                    <input type="text" name="first_name" placeholder="Imię" class="input-field">
+                    <span class="validation-message">Wypełnij to pole</span>
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" name="last_name" placeholder="Nazwisko" class="input-field">
+                    <span class="validation-message">Wypełnij to pole</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-wrapper">
+                    <input type="email" name="email" placeholder="Adres e-mail" class="input-field">
+                    <span class="validation-message">Niepoprawny email</span>
+                </div>
+                <div class="input-wrapper">
+                    <input type="tel" name="phone" placeholder="Numer telefonu" class="input-field">
+                    <span class="validation-message">Wypełnij to pole</span>
+                </div>
+            </div>
+            <div class="input-wrapper ">
+                <textarea name="message" placeholder="Wiadomość" class="input-field"></textarea>
+                <span class="validation-message">Wypełnij to pole</span>
+            </div>
+            <button type="submit" class="submit-button">Wyślij wiadomość</button>
+            <div id="success-message" style="display: none;color:green;">Dziękujemy! Twoja wiadomość została wysłana
+                pomyślnie.
+            </div>
+        </form>
+    </section>
+
+</body>
+<footer class="site-footer">
+    <div class="footer-column">
+        <h3>DANE ADRESOWE</h3>
+        <p>FastCars<br>
+            Bandrowskiego 8<br>
+            33-100 Tarnów<br>
+            woj. małopolskie<br>
+            NIP: 6601820949</p>
+    </div>
+    <div class="footer-column">
+        <h3>DANE KONTAKTOWE</h3>
+        <p>Tel: +48 602 678 650<br>
+            Email: fastcars@gmail.com</p>
+    </div>
+    <div class="footer-column">
+        <h3>WAŻNE LINKI</h3>
+        <ul>
+            <li><a href="#privacyPolicyModal">Polityka prywatności</a></li>
+        </ul>
+    </div>
+    <div class="copyright">
+        Copyright &copy; <span id="year"></span> Fast Cars
+    </div>
+</footer>
+<div id="privacyPolicyModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Polityka Prywatności</h2>
+        <div>
+            <p><strong>1. Wstęp</strong><br>
+                Niniejsza Polityka Prywatności obowiązuje w firmie Fast Cars, z siedzibą przy ul. Bandrowskiego 8,
+                33-100 Tarnów, woj. małopolskie, NIP: 6601820949. Dokument ten ma na celu informowanie naszych
+                klientów i użytkowników naszej strony internetowej o zasadach przetwarzania ich danych osobowych.
+            </p>
+
+            <p><strong>2. Zbieranie Danych Osobowych</strong><br>
+                W trakcie korzystania ze strony internetowej Fast Cars oraz podczas korzystania z naszych usług,
+                możemy zbierać różne dane osobowe, w tym, ale nie wyłącznie: imię i nazwisko, adres e-mail, numer
+                telefonu, dane dotyczące płatności, a także dane pojazdów.</p>
+
+            <p><strong>3. Cel Przetwarzania Danych</strong><br>
+                Zebrane dane osobowe są wykorzystywane do: Realizacji umów wynajmu samochodów, Komunikacji z
+                klientami w sprawach związanych z usługami, Wysyłania informacji marketingowych (jeśli wyrazili
+                Państwo na to zgodę), Poprawy jakości naszych usług i strony internetowej.</p>
+
+            <p><strong>4. Ochrona Danych Osobowych</strong><br>
+                Fast Cars stosuje odpowiednie środki techniczne i organizacyjne, aby zapewnić ochronę przetwarzanych
+                danych osobowych przed nieuprawnionym dostępem, zmianą, uszkodzeniem lub zniszczeniem.</p>
+
+            <p><strong>5. Udostępnianie Danych</strong><br>
+                Fast Cars nie sprzedaje ani nie udostępnia danych osobowych stronom trzecim, z wyjątkiem przypadków
+                wymaganych przez prawo, np. na żądanie organów ścigania.</p>
+
+            <p><strong>6. Prawa Użytkowników</strong><br>
+                Użytkownicy mają prawo do: Dostępu do swoich danych, Sprostowania danych, Usunięcia danych (prawo do
+                bycia zapomnianym), Ograniczenia przetwarzania danych, Przenoszenia danych, Sprzeciwu wobec
+                przetwarzania danych.</p>
+
+            <p><strong>7. Zmiany w Polityce Prywatności</strong><br>
+                Niniejsza polityka prywatności może być aktualizowana w celu odzwierciedlenia zmian w naszych
+                praktykach dotyczących prywatności lub zmian w prawie. Zachęcamy do regularnego przeglądania tej
+                strony w celu uzyskania informacji o naszych praktykach i zasadach prywatności.</p>
+
+            <p><strong>8. Kontakt</strong><br>
+                W przypadku pytań lub wątpliwości dotyczących naszej polityki prywatności, prosimy o kontakt pod
+                adresem e-mail: fastcars@gmail.com lub pod numerem telefonu: +48 602 678 650.</p>
+        </div>
+
+    </div>
+
+</html>

@@ -1,0 +1,328 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+
+}
+
+
+body {
+  font-family: montserrat;
+  margin: 0;
+  padding: 0;
+  padding-top: 100px;
+}
+
+nav {
+  background: #ffffff;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  box-shadow: 2px 2px 5px;
+}
+
+label.logo {
+  color: white;
+  line-height: 100px;
+  padding: 0 100px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 40px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 100px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+  background: #c69c6d;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #c69c6d;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #c69c6d;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+}
+
+.about {
+  text-align: center;
+  background-image: url(images/tło-car.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px 20px;
+}
+
+.about h1 {
+  font-size: 48px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.about h5 {
+  font-size: 24px;
+  color: #fff;
+
+}
+
+.about h4 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+
+}
+
+.about h2 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 50px;
+  padding: 10px;
+  margin-top: 50px;
+  text-shadow: black 0.1em 0.1em 0.2em
+}
+
+
+.fading-line {
+  position: relative;
+  display: inline-block;
+}
+
+.fading-line::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), #000, rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.about p {
+  font-size: 25px;
+  color: #fff;
+  line-height: 1.6;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.location {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.location-info {
+  font-size: 30px;
+  flex: 1;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.location-map {
+  flex: 1;
+  max-width: 640px;
+}
+
+.address h1 {
+  font-size: 48px;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0px;
+  padding: 0px;
+  margin-top: 0px;
+}
+
+
+.article {
+  font-size: 25px;
+  color: #000;
+
+}
+
+.location iframe {
+  border: 2px solid #c69c6d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .location {
+    flex-direction: column;
+  }
+
+  .location-info,
+  .location-map {
+    max-width: 100%;
+  }
+}
+
+.site-footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-column {
+  padding: 0 50px;
+
+
+}
+
+.footer-column h3 {
+  margin-bottom: 10px;
+}
+
+.footer-column p,
+.footer-column li {
+  line-height: 1.6;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-column li a:hover {
+  text-decoration: underline;
+}
+
+.footer-column {
+  margin-bottom: 5px;
+
+}
+
+
+.site-footer .copyright {
+  color: #808080;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
